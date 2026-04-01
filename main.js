@@ -12,7 +12,6 @@ const CHANNEL_ID = process.env.CHANNEL_ID;
 const ADMIN_IDS = process.env.ADMIN_IDS
   ? process.env.ADMIN_IDS.split(",").map(Number)
   : [];
-const WEBHOOK_PORT = process.env.PORT || 3000;
 
 process.on("uncaughtException", (err) => console.error("💥 CRASH:", err.message));
 process.on("unhandledRejection", (err) => console.error("💥 REJECTION:", err.message));
